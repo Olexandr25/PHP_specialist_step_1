@@ -9,6 +9,7 @@ function say($name, $h=1){
     $GLOBALS['name'] = "Vita";
 }
 
+
 say("John");
 $name = "Oleksandr";
 say($name);
