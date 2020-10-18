@@ -1,11 +1,8 @@
 <?php
-//$cols = 10;
-//$rows = 10;
-//$color = "yellow";
-$cnt = 0;
+
 function drawTable($cols=10, $rows=10, $color="yellow")
 {
-    global $cnt;
+    static $cnt = 0;
     $cnt++;
     echo "Таблица рисуется $cnt раз";
     echo "<table border='1'>";
