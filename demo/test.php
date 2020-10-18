@@ -1,10 +1,16 @@
 <?
-function nums(){
-    return [1,2,3];
+function nums($x, $y, &$a, &$b, &$c){
+    $a = $x * $y;
+    $b = $x / $y;
+    $c = $x - $y;
+    return $x + $y;
 }
+$sum = nums(2,3, $mult, $div, $sub);
+echo $sum, " ", $mult, " ", $sub;
+
 //list($one, $two, $three) = nums();
-$two = nums()[1];
-echo $two;
+//$two = nums()[1];
+//echo $two;
 /*
 function sum($n1, $n2){
     return $n1 + $n2;
