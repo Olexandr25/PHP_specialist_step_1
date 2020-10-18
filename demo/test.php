@@ -1,9 +1,11 @@
 <?
-function say($name, $h=5){
+function say($name, $h=1){
     echo "<h$h>Hello, $name!</h$h>";
+    global $name;
+    $name = "Vita";
 }
 
-say("John", 1);
-$n = "Oleksandr";
-say($n , 2);
-say("New");
+say("John");
+$name = "Oleksandr";
+say($name);
+echo $name;
