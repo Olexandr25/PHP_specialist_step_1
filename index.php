@@ -1,3 +1,27 @@
+<?php
+function drawMenu($menu, $vertical=true){
+    $style = "";
+    if(!$vertical){
+        $style = " style='display:inline; margin-right:15px'";
+    }
+    echo "<ul>";
+    foreach ($menu as $item){
+        echo "<li$style>";
+        echo "<a href='{$item['href']}'>{$item['link']}<a/>";
+        echo "</li>";
+    }
+    echo "</ul>";
+}
+
+$leftMenue = array(
+    array('link'=>'Домой', 'href'=>'index.php'),
+    array('link'=>'О нас', 'href'=>'about.php'),
+    array('link'=>'Контакты', 'href'=>'contact.php'),
+    array('link'=>'Таблица умножения', 'href'=>'table.php'),
+    array('link'=>'Калькулятор', 'href'=>'calc.php'),
+);
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -39,15 +63,9 @@
     <h2>Навигация по сайту</h2>
     <!-- Меню -->
       <?php
-      $leftMenue = [
-          ['link'=>'Домой', 'href'=>'index.php'],
-          ['link'=>'О нас', 'href'=>'about.php'],
-          ['link'=>'Контакты', 'href'=>'contact.php'],
-          ['link'=>'Таблица умножения', 'href'=>'table.php'],
-          ['link'=>'Калькулятор', 'href'=>'calc.php'],
-      ]
+        drawMenu($leftMenue);
       ?>
-
+<!--
     <ul>
       <li><a href='<?= $leftMenue[0]['href']?>'><?= $leftMenue[0]['link']?></a>
       </li>
@@ -59,12 +77,16 @@
       </li>
       <li><a href='<?= $leftMenue[4]['href']?>'><?= $leftMenue[4]['link']?></a>
       </li>
-    </ul>
+    </ul> -->
+
     <!-- Меню -->
     <!-- Навигация -->
   </div>
   <div id="footer">
     <!-- Нижняя часть страницы -->
+      <?
+        drawMenu($leftMenue,false);
+      ?>
     &copy; Супер Мега Веб-мастер, 2000 &ndash; 2015
     <!-- Нижняя часть страницы -->
   </div>

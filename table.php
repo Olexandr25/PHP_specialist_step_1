@@ -1,9 +1,9 @@
 <?php
 function drawTable($cols=10, $rows=10, $color="yellow")
 {
-    static $cnt = 0;
-    $cnt++;
-    echo "Таблица рисуется $cnt раз";
+    //static $cnt = 0;
+    //$cnt++;
+    //echo "Таблица рисуется $cnt раз";
     echo "<table border='1'>";
     for($tr=1; $tr<=$rows; $tr++){
         echo "<tr>";
