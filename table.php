@@ -2,7 +2,7 @@
 //$cols = 10;
 //$rows = 10;
 //$color = "yellow";
-
+$cnt = 0;
 function drawTable($cols=10, $rows=10, $color="yellow")
 {
     global $cnt;
