@@ -1,8 +1,12 @@
 <?
+$name = "Jake";
+$GLOBALS['name']="Jake";
+
 function say($name, $h=1){
-    global $name;
+    //global $name;
     echo "<h$h>Hello, $name!</h$h>";
-    $name = "Vita";
+    //unset($name);
+    $GLOBALS['name'] = "Vita";
 }
 
 say("John");
