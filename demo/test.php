@@ -2,7 +2,7 @@
 function say($name, $h=1){
     global $name;
     echo "<h$h>Hello, $name!</h$h>";
-    //$name = "Vita";
+    $name = "Vita";
 }
 
 say("John");
