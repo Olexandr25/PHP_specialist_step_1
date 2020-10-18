@@ -74,7 +74,6 @@ function drawTable($cols=10, $rows=10, $color="yellow")
         }
         echo "</tr>";
     }*/
-
     ?>
     <!-- Таблица -->
     <!-- Область основного контента -->
