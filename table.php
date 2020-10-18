@@ -1,5 +1,4 @@
 <?php
-
 function drawTable($cols=10, $rows=10, $color="yellow")
 {
     static $cnt = 0;
