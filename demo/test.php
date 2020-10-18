@@ -1,8 +1,8 @@
 <?
 function say($name, $h=1){
-    echo "<h$h>Hello, $name!</h$h>";
     global $name;
-    $name = "Vita";
+    echo "<h$h>Hello, $name!</h$h>";
+    //$name = "Vita";
 }
 
 say("John");
