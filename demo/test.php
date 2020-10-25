@@ -1,4 +1,19 @@
-<?
+<?php
+
+echo "A $color $fruit <br>"; // A
+
+include 'test.inc.php';
+
+echo "A $color $fruit <br>"; // A green apple
+
+include 'test.inc.php';
+
+echo "A  $fruit <br>"; // A green apple
+
+?>
+
+
+<?php
 /*
 function nums($x, $y, &$a, &$b, &$c){
     $a = $x * $y;

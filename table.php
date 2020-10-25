@@ -1,22 +1,4 @@
-<?php
-function drawTable($cols=10, $rows=10, $color="yellow")
-{
-    //static $cnt = 0;
-    //$cnt++;
-    //echo "Таблица рисуется $cnt раз";
-    echo "<table border='1'>";
-    for($tr=1; $tr<=$rows; $tr++){
-        echo "<tr>";
-        for($td=1; $td<=$cols; $td++){
-            if($tr == 1 or $td == 1)
-                echo "\t<th style='background:$color'>" . $tr*$td."</th>\n";
-            else
-                echo "\t<td style='background: aqua'>" . $tr*$td."</td>\n";
-        }
-        echo "</tr>";
-    }
-}
-?>
+
 
 <!DOCTYPE html>
 <html>
